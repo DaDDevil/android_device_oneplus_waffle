@@ -11,8 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/oneplus/waffle/device.mk)
 
 # Inherit AxionAOSP common stuff. 
-# 注意：如果 Axion 源码里的 vendor 路径不是 vendor/axion，你可能需要修改这里（例如 vendor/aosp/config/...）
-$(call inherit-product, vendor/axion/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 PRODUCT_NAME := axion_waffle
 PRODUCT_DEVICE := waffle
