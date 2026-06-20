@@ -175,7 +175,7 @@
          This array should be equal in size to config_screenBrightnessBacklight. -->
     <integer-array name="config_screenBrightnessBacklight">
         <item>1</item>
-        <item>255</item>
+        <item>4095</item>
     </integer-array>
 
     <!-- An array of floats describing the screen brightness in nits corresponding to the backlight
@@ -217,7 +217,7 @@
          the screen brightness is recalculated. See the config_ambientThresholdLevels
          description for how the constraint value is chosen. -->
     <integer-array name="config_ambientBrighteningThresholds">
-        <item>5000</item> <!--     0 - 50    -->
+        <item>1000</item> <!--     0 - 50    -->
         <item>1500</item> <!--    50 - 115   -->
         <item>750</item>  <!--   115 - 500   -->
         <item>600</item>  <!--   500 - 1000  -->
@@ -233,8 +233,8 @@
          the screen brightness is recalculated. See the config_ambientThresholdLevels
          description for how the constraint value is chosen. -->
     <integer-array name="config_ambientDarkeningThresholds">
-        <item>1</item>    <!--     0 - 50    -->
-        <item>50</item>   <!--    50 - 150   -->
+        <item>200</item>  <!--     0 - 50    -->
+        <item>200</item>  <!--    50 - 150   -->
         <item>450</item>  <!--   115 - 500   -->
         <item>500</item>  <!--   500 - 1000  -->
         <item>500</item>  <!--  1000 - 2000  -->
